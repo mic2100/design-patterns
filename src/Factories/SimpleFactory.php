@@ -3,11 +3,13 @@
 namespace Mic2100\DesignPatterns\Factories;
 
 use Exception;
-use Mic2100\DesignPatterns\Examples\KeySort;
-use Mic2100\DesignPatterns\Examples\KeyReverseSort;
-use Mic2100\DesignPatterns\Examples\ReverseSort;
-use Mic2100\DesignPatterns\Examples\Sort;
-use Mic2100\DesignPatterns\Examples\SortingStrategyInterface;
+use Mic2100\DesignPatterns\Examples\Strategies\ArraySorter\{
+    KeySort,
+    KeyReverseSort,
+    ReverseSort,
+    Sort,
+    SortingStrategyInterface
+};
 
 /**
  * Class SimpleFactory
@@ -30,16 +32,16 @@ class SimpleFactory
     {
         switch ($number) {
             case 1:
-                return new KeySort;
+                return new KeySort();
 
             case 2:
-                return new KeyReverseSort;
+                return new KeyReverseSort();
 
             case 3:
-                return new Sort;
+                return new Sort();
 
             case 4:
-                return new ReverseSort;
+                return new ReverseSort();
 
             default:
                 throw new Exception('Unrecognised class number: ' . $number);

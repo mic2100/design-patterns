@@ -1,14 +1,9 @@
 <?php
 
-namespace Mic2100\DesignPatterns\Strategies;
-
-use Mic2100\DesignPatterns\Examples\Strategies\ArraySorter\SortingStrategyInterface;
+namespace Mic2100\DesignPatterns\Examples\Strategies\ArraySorter;
 
 /**
- * Class SimpleStrategy
- *
- * Strategies are useful when you want to do a specific task depending on the scenario
- * In this example different sorting strategies are used depending on your requirements.
+ * Class ArraySorter
  *
  * Strategies in this example that implement the SortingStrategyInterface:
  * KeySort - Sorts array by the array key
@@ -18,7 +13,7 @@ use Mic2100\DesignPatterns\Examples\Strategies\ArraySorter\SortingStrategyInterf
  *
  * @package Mic2100\DesignPatterns\Strategies
  */
-class SimpleStrategy
+class ArraySorter
 {
     /**
      * @var SortingStrategyInterface|null

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mic2100\DesignPatternTests\Factories;
+namespace Mic2100DesignPatternTests\Unit\Factories;
 
 use Exception;
-use Mic2100\DesignPatterns\Examples\{KeySort, KeyReverseSort, ReverseSort, Sort};
+use Mic2100\DesignPatterns\Examples\Strategies\ArraySorter\{KeySort, KeyReverseSort, ReverseSort, Sort};
 use Mic2100\DesignPatterns\Factories\SimpleFactory;
 use PHPUnit\Framework\TestCase;
 

@@ -46,7 +46,7 @@ class SimpleSingleton
     public static function getInstance(): self
     {
         if (self::$instance == null) {
-            self::$instance = new SimpleSingleton;
+            self::$instance = new SimpleSingleton();
         }
 
         return self::$instance;

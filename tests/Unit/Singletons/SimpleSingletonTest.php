@@ -1,6 +1,6 @@
 <?php
 
-namespace Mic2100\DesignPatternTests\Singletons;
+namespace Mic2100DesignPatternTests\Unit\Singletons;
 
 use Exception;
 use Mic2100\DesignPatterns\Singletons\SimpleSingleton;
