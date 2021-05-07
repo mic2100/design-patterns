@@ -21,16 +21,12 @@ use Mic2100\DesignPatterns\Examples\Strategies\ArraySorter\SortingStrategyInterf
 class SimpleStrategy
 {
     /**
-     * @var SortingStrategyInterface|null
-     */
-    private ?SortingStrategyInterface $sortingStrategy = null;
-
-    /**
      * @param SortingStrategyInterface $sortingStrategy
      */
-    public function __construct(SortingStrategyInterface $sortingStrategy)
-    {
-        $this->setSortingStrategy($sortingStrategy);
+    public function __construct(
+        private ?SortingStrategyInterface $sortingStrategy = null
+    ) {
+
     }
 
     /**

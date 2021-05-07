@@ -16,19 +16,15 @@ namespace Mic2100\DesignPatterns\Examples\Strategies\ArraySorter;
 class ArraySorter
 {
     /**
-     * @var SortingStrategyInterface|null
-     */
-    private ?SortingStrategyInterface $sortingStrategy = null;
-
-    /**
      * @param SortingStrategyInterface $sortingStrategy
      */
-    public function __construct(SortingStrategyInterface $sortingStrategy)
+    public function __construct(private ?SortingStrategyInterface $sortingStrategy = null)
     {
-        $this->setSortingStrategy($sortingStrategy);
     }
 
     /**
+     * Sets the sorting strategy that will be used when calling the sort method
+     *
      * @param SortingStrategyInterface $sortingStrategy
      */
     public function setSortingStrategy(SortingStrategyInterface $sortingStrategy): void
@@ -37,6 +33,8 @@ class ArraySorter
     }
 
     /**
+     * Sorts the array using the provided sorting interface
+     *
      * @param array $data
      * @return array
      */
