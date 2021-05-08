@@ -26,7 +26,6 @@ class SimpleStrategy
     public function __construct(
         private ?SortingStrategyInterface $sortingStrategy = null
     ) {
-
     }
 
     /**
