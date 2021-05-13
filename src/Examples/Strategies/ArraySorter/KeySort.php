@@ -5,7 +5,7 @@ namespace Mic2100\DesignPatterns\Examples\Strategies\ArraySorter;
 class KeySort implements SortingStrategyInterface
 {
     /**
-     * {@inherit}
+     * @inheritDoc
      */
     public function sort(array $data): array
     {

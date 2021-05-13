@@ -5,7 +5,7 @@ namespace Mic2100\DesignPatterns\Examples\Strategies\ArraySorter;
 class ReverseSort implements SortingStrategyInterface
 {
     /**
-     * {@inherit}
+     * @inheritDoc
      */
     public function sort(array $data): array
     {
